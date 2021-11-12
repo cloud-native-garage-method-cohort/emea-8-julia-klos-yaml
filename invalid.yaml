@@ -19,7 +19,7 @@ spec:
       workspaces:
         - name: output
           workspace: pipeline-shared-data
-    - name: lint--repo
+    - name: lint-repo
       runAfter:
         - clone-repository
       taskRef:
@@ -29,7 +29,7 @@ spec:
         - name: shared-workspace
           workspace: pipeline-shared-data
       params:
-        - name: args
-          value: ["."]	
+         - name: args
+           value: ["."]	
   workspaces:
     - name: pipeline-shared-data
