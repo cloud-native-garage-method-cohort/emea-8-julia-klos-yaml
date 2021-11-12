@@ -27,7 +27,7 @@ spec:
         kind: Task
       workspaces:
         - name: shared-workspace
-          workspace: pipeline: shared-data
+          workspace: pipeline-shared-data
       params:
          - name: args
            value: ["."]	
