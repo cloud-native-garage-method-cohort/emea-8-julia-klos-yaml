@@ -1,3 +1,4 @@
+---
 apiVersion: tekton.dev/v1beta1
 kind: Pipeline
 metadata:
@@ -14,7 +15,7 @@ spec:
           value: "$(params.source-repo)
       taskRef:
         name: git-clone
-        kind: "ClusterTask"
+        kind: ClusterTask
       workspaces:
         - name: output
           workspace: pipeline-shared-data
@@ -27,7 +28,7 @@ spec:
       workspaces:
         - name: shared-workspace
           workspace: pipeline: shared-data
-    params:
+      params:
          - name: args
            value: ["."]	
   workspaces:
