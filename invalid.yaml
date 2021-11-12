@@ -12,7 +12,7 @@ spec:
     - name: clone-repository
       params:
         - name: url
-          value: "$(params.source-repo)
+          value: "$(params.source-repo)"
       taskRef:
         name: git-clone
         kind: ClusterTask
