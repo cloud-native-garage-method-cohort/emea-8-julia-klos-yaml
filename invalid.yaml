@@ -30,6 +30,6 @@ spec:
           workspace: pipeline-shared-data
       params:
         - name: args
-        value: ["."]	
+          value: ["."]
   workspaces:
     - name: pipeline-shared-data
